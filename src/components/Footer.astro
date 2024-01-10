@@ -1,11 +1,28 @@
+---
+import { Icon } from "astro-icon";
+import * as CONTENT from "../pages/content"
+---
 <footer class="bg-background/5 flex justify-between items-center px-2 py-1">
-    <p>© 2023 Peter Griffin</p>
-
     <p>
+        <span class="flex">
+            <Icon
+                name="mdi:creative-commons"
+                class="w-5 h-5"
+            />{new Date().getFullYear()}&nbsp;{CONTENT.MY_FULLNAME}&nbsp;<Icon
+            name="entypo-social:github"
+            class="w-5 h-5"
+            />&nbsp;
+            <a href="https://github.com/">
+                Código Fuente
+            </a>        
+        </span>
+    </p>
+    <p>
+        Plantilla
         <a href="https://github.com/uskhokhar/astro-vitae" target="_blank" class="underline underline-offset-2 hover:no-underline">
-            Astro-Vitae Template
+            Astro-Vitae
         </a>
-        developed by 
+        desarrollada por
         <a href="https://uskhokhar.me" target="_blank" class="underline underline-offset-2 hover:no-underline">
             U.S.Khokhar 🤓
         </a>

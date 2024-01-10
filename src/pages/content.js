@@ -1,24 +1,75 @@
 // Personal Information --> #hero section
-export const name = "Peter Griffin"
-export const designation = "Safety Inspector"
-export const location = "Quahog, Rhode Island"
-export const pronouns = "he/him"
-export const website = "https://petergriffin.com"
+export const MY_FIRSTNAME = "José"
+export const MY_SURNAME = "González Silva"
+export const MY_FULLNAME = MY_FIRSTNAME + " " + MY_SURNAME
+export const MY_OCUPATION = "Backend Developer"
+export const MY_LOCATION = "Gran Alacant, Alicante, España"
+export const MY_GEOLOCATION = "https://osm.org/go/b76T~FFU--?layers=PN"
+export const MY_BIRTHDATE = "First \"Hello World\" on 451954800"
+export const MY_WEBSITE = "https://gadev.com.es/"
 
 // About
-export const about = "An adventurous man working as a safety inspector with a quirky sense of humor. Husband to Louis Griffin. Father of Chris, Brian, and Stewie."
-
+export const ABOUT_ME = [
+	"Di mi primer \"Hola Mundo\" en 451954800.\n",
+	"Informático entusiasta desde que mi padre trajera a casa la tecnología punta en 1992 con un 286 con pantalla a color.",
+	"Me vuelven loco los videojuegos, la fotografía y el explorar el campo, y tengo una secreta afición a cocinar, puede que eso explique mi ligero sobrepeso.",
+	"Me considero un tipo curioso, en todos los aspectos. No puedo decir que no me haya rendido alguna vez pero es un recurso que detesto."
+]
 // Work Experience --> #work section
 export const work = [
 	{
-		from: "2001",
-		to: "Present",
-		role: "Safety Inspector",
-		org: "Quahog Safety Department",
-		org_url: "https://quahog.gov/safety",
-		location: "Quahog, Rhode Island",
+		from: "sept. 2023",
+		role: MY_OCUPATION,
+		org: "LCRCom - Grupo Aire",
+		org_url: "https://www.lcrcom.net/",
+		location: "(Remoto) Madrid, España",
+		skills: "Desarrollo de soluciones de software para API, WebSocket y PBX2 bajo PHP8"
+	},
+]
+// Former work.
+export const former_work = [
+	{
+		from: "jun. 2019",
+		to: "mar. 2023",
+		role: "Desarrollador de Software",
+		org: "Artica PFMS",
+		org_url: "https://pandorafms.com/es/",
+		location: "(Remoto) Madrid, España",
 		skills: "Safety Inspection, Risk Assessment, Emergency Response"
-	}
+	},{
+		from: "sept. 2018",
+		to: "jun. 2019",
+		role: "Desarrollador de Software",
+		org: "Everis (NTT Data)",
+		org_url: "https://es.nttdata.com/",
+		location: "Alicante, España",
+		skills: "Safety Inspection, Risk Assessment, Emergency Response"
+	},{
+		from: "jul. 2017",
+		to: "ago. 2018",
+		role: "Programador Web",
+		org: "Atramentum SL",
+		org_url: "https://www.linkedin.com/company/atramentum-sl/",
+		location: "Alicante, España",
+		skills: "Safety Inspection, Risk Assessment, Emergency Response"
+	},{
+		from: "nov. 2015",
+		to: "dic. 2015",
+		role: "Tecnico en Sistemas Distribuidos",
+		org: "i3E Informática",
+		org_url: "https://www.i3einformatica.com/",
+		location: "Alicante, España",
+		skills: "Safety Inspection, Risk Assessment, Emergency Response"
+	},{
+		from: "abr. 2007",
+		to: "jun. 2014",
+		role: "Consultor Técnico",
+		org: "Information Builders Iberica",
+		org_url: "https://www.ibi.com/",
+		location: "Tres Cantos, Madrid, España",
+		skills: "Safety Inspection, Risk Assessment, Emergency Response"
+	},
+
 ]
 
 // Projects --> #project section
