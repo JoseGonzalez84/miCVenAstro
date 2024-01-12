@@ -1,17 +1,21 @@
 ---
 import * as CONTENT from "./content"
+import { Tooltips } from 'astro-tooltips';
 import Container from "../components/Container.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 ---
 
-<html lang="en">
+<html lang="es">
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;500;700&display=swap" rel="stylesheet">
+		<!--<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">-->
+		<!--<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap" rel="stylesheet">-->
+		<Tooltips interactive={false} delay={[15, 500]} />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>CV | {CONTENT.MY_FULLNAME}</title>
@@ -22,9 +26,9 @@ import Footer from "../components/Footer.astro";
 
 		<!-- Bar Effect -->
 		<article class="mx-auto h-fit max-w-3xl w-[95vw] flex flex-nowrap bg-slate-400">
-				<div class="bg-slate-900 hover:scale-x-[2] w-full h-1.5" id="one"></div>
-				<div class="bg-red-900 hover:scale-x-[2] w-full h-1.5" id="two"></div>
-				<div class="bg-blue-900 hover:scale-x-[2] w-full h-1.5" id="three"></div>
+			<div class="bg-red-900 w-full h-1.5" id="one"></div>
+			<div class="bg-yellow-500 hover:scale-x-[2] w-full h-1.5" id="two"></div>
+			<div class="bg-red-900 w-full h-1.5" id="three"></div>
 		</article>
 
 		<main class="mx-auto flex-grow max-h-[90vh] md:max-h-[70vh] max-w-3xl overflow-y-scroll grid gap-5 p-5 w-[95vw]">
@@ -37,9 +41,40 @@ import Footer from "../components/Footer.astro";
 
 
 <style is:global>
+
+	.tech-badge {
+		/*border: 1px solid #fbfbfb;*/
+		border-radius: 0.7em;
+		padding: 0.1em 0.5em;
+		margin-right: 1em;
+		box-shadow: #181818 0px 1px 3px 3px;
+		text-shadow: 0px 0px 5px #00000075;
+	}
+
+	:root {
+		--color-fuente: #ededed;
+		--color-fondo: #111;
+	}
+
+	[tema="light"]{
+		--color-fuente: #111;
+		--color-fondo: #ededed;
+	}
+
 	*{
 		transition: 350ms ease-in-out;
-		font-family: 'Manrope', sans-serif;
+		font-family: 'Sarabun', sans-serif;
+	}
+
+	body {
+		/*
+		background-color:var(--color-fondo) !important;
+  		color:var(--color-fuente) !important;
+		*/
+	}
+
+	h1, h2, h4, p, a, sub {
+		/* color:var(--color-fuente) !important; */
 	}
 
 	@media only screen and (max-width: 480px){
@@ -61,4 +96,86 @@ import Footer from "../components/Footer.astro";
 	.overflow-y-scroll {
 		scrollbar-width: 1px;
 	}
+
+	#switchModo {
+		position: relative;
+		display: inline-block;
+		width: 34px;
+		height: 34px;
+	}
+	
+	#switchModo input { 
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+
+	.switch {
+		position: absolute;
+		display: inline-block;
+		width: 60px;
+		height: 34px;
+	}
+
+	.switch input { 
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+
+	.slider {
+		position: absolute;
+    	cursor: pointer;
+		background-color: #ccc;
+		transition: .4s;
+		width: 36px;
+		height: 18px;
+	}
+
+	.slider:before {
+		position: absolute;
+		content: "";
+		height: 12px;
+		width: 12px;
+		left: 4px;
+		bottom: 3px;
+		background-color: white;
+		transition: .4s;
+	}
+
+	input:checked + .slider {
+		background-color: #2196F3;
+	}
+
+	input:focus + .slider {
+		box-shadow: 0 0 1px #2196F3;
+	}
+
+	input:checked + .slider:before {
+		-webkit-transform: translateX(16px);
+		-ms-transform: translateX(16px);
+		transform: translateX(16px);
+	}
+
+
+	.slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
 </style>
+
+<script>
+	const colorSwitch = document.querySelector('#switchModo input[type="checkbox"]');
+	function cambiaTema(ev: any){
+		if(ev.target.checked){
+			document.documentElement.setAttribute('tema', 'light');
+		} else {
+			document.documentElement.setAttribute('tema', 'dark');
+		}
+	}
+	colorSwitch.addEventListener('change', cambiaTema);
+</script>

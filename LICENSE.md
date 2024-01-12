@@ -1,21 +1,21 @@
-MIT License
+Licencia MIT
 
-Copyright (c) 2023 Utkarsh Singh Khokhar
+Copyright (c) 2024 José González Silva
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Se permite a cualquier persona y totalmente libre de costes, la obtención total o parcial
+de una copia de este software y su documentación (a partir de ahora, el "SOFTWARE")
+para ser utilizado sin restricciones o limitaciones en su uso, modificación,
+publicación, distribución, relicenciamiento y/o venta de copias del mismo. 
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Mencionados permisos se garantizan por esta licencia SIEMPRE Y CUANDO se sigan las 
+siguientes condiciones. En caso contrario, se estará rompiendo el acuerdo de licencia:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+- Dicho SOFTWARE no podrá ser utilizado o participar en cualquier actividad delictiva o
+criminal, con fines de cuestionable moral o que estén destinados a provocar daños a individuos
+o colectivos, sean cual sean sus afinidades.
+- El SOFTWARE se ha entregado "TAL CUAL", sin garantías de ningún tipo. Este SOFTWARE fué
+creado con fines educativos y para uso personal, y está a disposición de cualquiera para darle
+el uso que considere adecuado, siempre que siga las premisas del presente licenciamiento.
+- En cualquier caso, el creador del SOFTWARE no será responsable en ningún caso de cualquier
+anomalía, errores, daños, fallas o inclumplimientos que pueda provocar el mismo, en cualquiera
+de sus maneras.

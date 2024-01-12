@@ -1,0 +1,8 @@
+---
+import { Icon } from "astro-icon";
+const { content } = Astro.props
+---
+{content.map((item: any) => {
+    return <p>{item}</p><br/>
+  })
+}

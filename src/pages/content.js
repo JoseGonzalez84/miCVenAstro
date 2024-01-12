@@ -10,10 +10,33 @@ export const MY_WEBSITE = "https://gadev.com.es/"
 
 // About
 export const ABOUT_ME = [
-	"Di mi primer \"Hola Mundo\" en 451954800.\n",
-	"Informático entusiasta desde que mi padre trajera a casa la tecnología punta en 1992 con un 286 con pantalla a color.",
-	"Me vuelven loco los videojuegos, la fotografía y el explorar el campo, y tengo una secreta afición a cocinar, puede que eso explique mi ligero sobrepeso.",
-	"Me considero un tipo curioso, en todos los aspectos. No puedo decir que no me haya rendido alguna vez pero es un recurso que detesto."
+	"Di mi primer \"Hola Mundo\" en 451954800, poco despues que lo hiciera el Apple Macintosh.",
+	"Mis primeros pinitos en la informática los dí en el año olímpico de 1992, de la mano del IBM Clónico con procesador 80286, 2Mb de RAM, 20Mb de disco duro y monitor CRT a color (todo un portento de la tecnología de la época) que trajo mi padre a casa. Desde entonces, me considero un informático entusiasta con ganas de aprender de todo (con 10 años me llegué a leer el manual de dBase IV).",
+	"Me considero un tipo curioso, en todos los aspectos; me gusta aprender cosas nuevas y practicar lo que ya se. No puedo decir que no me haya rendido alguna vez pero es un recurso que detesto, así que trato de terminar mis cosas aunque el universo no me deje siempre.",
+	"Me vuelven loco los videojuegos, la fotografía y el explorar el campo, ya sea haciendo senderismo o con la bicicleta de montaña. Y tengo una secreta afición a cocinar.",
+]
+// Tech Stack
+export const TECH_STACK = [
+	{
+		"title": "Backend",
+		"content": ["PHP", "Perl", "C#", "Python", "NodeJS"]
+	},
+	{
+		"title": "Frontend",
+		"content": ["JavaScript", "ASTRO", "CSS3", "React"]
+	},
+	{
+		"title": "BBDD",
+		"content": ["MySQL", "SQLite", "MongoDB"]
+	},
+	{
+		"title": "Sistemas",
+		"content": ["Linux", "UNIX", "Docker", "VMWare"]
+	},
+	{
+		"title": "Gestión de Versiones",
+		"content": ["GIT", "SVN"]
+	}
 ]
 // Work Experience --> #work section
 export const work = [
@@ -23,7 +46,8 @@ export const work = [
 		org: "LCRCom - Grupo Aire",
 		org_url: "https://www.lcrcom.net/",
 		location: "(Remoto) Madrid, España",
-		skills: "Desarrollo de soluciones de software para API, WebSocket y PBX2 bajo PHP8"
+		skills: "Desarrollo de features para API, PBX y software de comunicaciones. https://www.linkedin.com/posts/grupo-aire_centralitavirtual-recursoshumanos-rrhh-activity-7107641756657102848-UftF?utm_source=share&utm_medium=member_desktop",
+		badges: "PHP, API, WebSockets, MySQL"
 	},
 ]
 // Former work.
@@ -35,15 +59,17 @@ export const former_work = [
 		org: "Artica PFMS",
 		org_url: "https://pandorafms.com/es/",
 		location: "(Remoto) Madrid, España",
-		skills: "Safety Inspection, Risk Assessment, Emergency Response"
+		skills: "Desarrollo de software de monitorización, resolución de bugs y adición de features.",
+		badges: "PHP, Perl, Python, JavaScript, Docker, MySQL"
 	},{
 		from: "sept. 2018",
 		to: "jun. 2019",
-		role: "Desarrollador de Software",
+		role: "Desarrollador de Software .NET",
 		org: "Everis (NTT Data)",
 		org_url: "https://es.nttdata.com/",
 		location: "Alicante, España",
-		skills: "Safety Inspection, Risk Assessment, Emergency Response"
+		skills: "Resolución de bugs y mantenimiento de código legacy en sistemas de información.",
+		badges: "C#, Visual Basic.NET, SVN, SQL Server"
 	},{
 		from: "jul. 2017",
 		to: "ago. 2018",
@@ -51,7 +77,8 @@ export const former_work = [
 		org: "Atramentum SL",
 		org_url: "https://www.linkedin.com/company/atramentum-sl/",
 		location: "Alicante, España",
-		skills: "Safety Inspection, Risk Assessment, Emergency Response"
+		skills: "Desarrollo de portal web comercial de la empresa, ecommerce y TPV.",
+		badges: "PHP, JavaScript, GIT, MySQL"
 	},{
 		from: "nov. 2015",
 		to: "dic. 2015",
@@ -59,7 +86,8 @@ export const former_work = [
 		org: "i3E Informática",
 		org_url: "https://www.i3einformatica.com/",
 		location: "Alicante, España",
-		skills: "Safety Inspection, Risk Assessment, Emergency Response"
+		skills: "Sustitución temporal. Mantenimiento de sistemas informáticos.",
+		badges: "Windows, Remedy Action"
 	},{
 		from: "abr. 2007",
 		to: "jun. 2014",
@@ -67,7 +95,8 @@ export const former_work = [
 		org: "Information Builders Iberica",
 		org_url: "https://www.ibi.com/",
 		location: "Tres Cantos, Madrid, España",
-		skills: "Safety Inspection, Risk Assessment, Emergency Response"
+		skills: "Instalación y mantenimiento de servidores de reporting en diversos sistemas.",
+		badges: "WebFOCUS, iWay Software, COBOL, UNIX, Shell Scripting"
 	},
 
 ]
@@ -97,25 +126,32 @@ export const projects = [
 // Education --> #education section
 export const education = [
 	{
-		from: "1995",
-		to: "1999",
-		institute: "Quahog High School",
-		course: "High School Diploma",
-		location: "Quahog, Rhode Island"
+		from: "2016",
+		to: "2018",
+		institute: "IES Mare Nostrum",
+		course: "Técnico Superior en Desarrollo de Aplicaciones Web",
+		location: "Alicante, España"
 	},
 	{
-		from: "1999",
-		to: "2003",
-		institute: "Quahog Community College",
-		course: "Bachelor of Science in Safety Management",
-		location: "Quahog, Rhode Island"
+		from: "2016",
+		to: "2014",
+		institute: "IES Leonardo Da Vinci",
+		course: "Técnico en Emergencias Sanitarias",
+		location: "Alicante, España"
 	},
 	{
-		from: "2003",
-		to: "2005",
-		institute: "Safety University",
-		course: "Master of Science in Safety Engineering",
-		location: "Boston, Massachusetts"
+		from: "2005",
+		to: "2007",
+		institute: "IES Juan de la Cierva",
+		course: "Técnico en Explotación de Sistemas Informáticos",
+		location: "Madrid, España"
+	},
+	{
+		from: "1996",
+		to: "2002",
+		institute: "IES Felipe II",
+		course: "Titulo en Educación Secundaria Obligatoria",
+		location: "Madrid, España"
 	}
 ]
 
@@ -123,82 +159,232 @@ export const education = [
 export const contact = [
 	{
 		source_name: "Email",
-		source: "peter.griffin@example.com",
+		source: "mailto:josegonzalez84@outlook.es",
+		icon: "mdi:email",
 	},
 	{
-		source_name: "Twitter",
-		source: "https://twitter.com/PeterGriffin",
+		source_name: "X, antes conocido por Twitter",
+		source: "https://twitter.com/jsx_freakk",
+		icon: "mdi:twitter",
 	},
 	{
 		source_name: "LinkedIn",
-		source: "https://www.linkedin.com/in/peter-griffin",
+		source: "https://www.linkedin.com/in/jose-gonzalez-silva/",
+		icon: "mdi:linkedin",
+	},
+	{
+		source_name: "Spotify",
+		source: "https://open.spotify.com/user/11143436407?si=ee9c73538c4a4638",
+		icon: "mdi:spotify",
+	},
+	{
+		source_name: "Telegram",
+		source: "https://open.spotify.com/user/11143436407?si=ee9c73538c4a4638",
+		icon: "ic:baseline-telegram",
 	},
 ]
 
 // Certifications --> #certificate section
-
 export const certificates = [
 	{
-		issued: "2005",
-		title: "Certified Safety Inspector",
-		org: "National Safety Association",
-		url: "https://certi.com/url",
-		description: "Certification in safety inspection and risk assessment.",
+		issued: "oct. 2023",
+		title: "Curso de JavaScript Avanzado",
+		org: "OpenWebinars",
+		url: "https://openwebinars.net/cert/uiz0",
+		description: "Estructuras de datos, promesas, asincronía y programación funcional.",
 	},
 	{
-		issued: "2006",
-		title: "Emergency Response Training",
-		org: "Quahog Safety Department",
-		url: "https://certi.com/url",
-		description: "Training in handling emergency situations and crisis management.",
+		issued: "oct. 2023",
+		title: "Curso de JavaScript Intermedio",
+		org: "OpenWebinars",
+		url: "https://openwebinars.net/cert/tsYJ",
+		description: "Tipos de datos avanzados, manejo del DOM y manejo de eventos.",
 	},
 	{
-		issued: "2007",
-		title: "Safety Leadership Workshop",
-		org: "Safety Leaders International",
-		url: "https://certi.com/url",
-		description: "Leadership training in safety management and communication.",
-	}
-]
-
-// Blogs --> #blogs section
-export const blogs = [
-	{
-		date: "12-July, 2023",
-		url: "https://medium.com/",
-		title: "Adventures in Safety Inspection",
-		description: "Join me in my humorous escapades as a safety inspector in Quahog.",
-		publisher: "Quahog Times",
+		issued: "oct. 2023",
+		title: "Curso de HTML5 y CSS3",
+		org: "OpenWebinars",
+		url: "https://openwebinars.net/cert/PDLem",
+		description: "Refuerzo y conocimiento en profundidad de HTML5 y CSS3",
 	},
 	{
-		date: "25-June, 2023",
-		url: "https://medium.com/",
-		title: "Top 10 Safety Tips for Families",
-		description: "Learn the best safety practices for families to ensure a secure environment.",
-		publisher: "Safety Monthly",
+		issued: "sep. 2023",
+		title: "Taller de desarrollo de WebServices SOAP con PHP",
+		org: "OpenWebinars",
+		url: "https://openwebinars.net/cert/h56u",
+		description: "Utilización de funcionalidades nativas de PHP para acceder a aplicaciones con SOAP.",
+	},
+	{
+		issued: "sep. 2023",
+		title: "Taller de TDD en PHP con PHPUnit",
+		org: "OpenWebinars",
+		url: "https://openwebinars.net/cert/x9tz",
+		description: "Construcción basada en Testing de una aplicación web bajo PHP y PHPUnit.",
+	},
+	{
+		issued: "abr. 2022",
+		title: "Iniciación a PHPUnit",
+		org: "OpenWebinars",
+		url: "https://openwebinars.net/cert/PDLem",
+		description: "Características de PHPUnit y diferentes casuísticas.",
+	},
+	{
+		issued: "abr. 2020",
+		title: "Programación en Python 3",
+		org: "OpenWebinars",
+		url: "https://openwebinars.net/cert/ddk6l",
+		description: "Programación y desarrollo de programas con Python 3. Módulos, Programación Estructurada y POO.",
+	},
+	{
+		issued: "nov. 2019",
+		title: "Introducción a C++",
+		org: "OpenWebinars",
+		url: "https://openwebinars.net/cert/kkNZp",
+		description: "Conocimientos introductorios a C++.",
+	},
+	{
+		issued: "jul. 2019",
+		title: "Pandora Engineering Course",
+		org: "Artica PFMS",
+		url: "https://openwebinars.net/cert/kkNZp",
+		description: "Conocimientos avanzados de instalación y configuración de PandoraFMS 736",
+	},
+	{
+		issued: "nov. 2010",
+		title: "Programación con PHP 5.3",
+		org: "Universidad Politécnica de Madrid",
+		url: "",
+		description: "Desarrollo de aplicaciones web bajo PHP 5.3, manipulación de XML y acceso a BBDD.",
 	}
 ]
 
 // Achievements --> #achievement section
 export const achievements = [
 	{
-		title: "Safety Hero Award",
-		year: "2020",
-		decription: "Recognized for outstanding contributions to improving safety standards in Quahog."
+		title: "Actuación como Sanitario en Preventivos",
+		year: "2016",
+		decription: "Voluntariado en delegación de Cruz Roja de Santa Pola, acudiendo como Técnico a diversos actos multitudinarios."
 	},
 	{
-		title: "Safety Innovation Prize",
-		year: "2018",
-		decription: "Awarded for implementing innovative safety measures that yielded significant improvements."
+		title: "Talleres de nuevas tecnologías para mayores",
+		year: "2016",
+		decription: "Voluntariado en delegación de Cruz Roja de Santa Pola, impartiendo cursos de utilización de nuevas tecnologías a personas mayores."
 	},
 	{
-		title: "Community Safety Ambassador",
+		title: "Monitor en traslado para niños con discapacidad",
 		year: "2015",
-		decription: "Honored for promoting safety awareness and education in the Quahog community."
+		decription: "Voluntariado en delegación de Cruz Roja de Santa Pola, acompañando a personas con diversas discapacidades a sus centros de día."
+	}
+]
+
+// Technology badges
+export const TECH_BADGES = [
+	{
+		title: "PHP",
+		icon: "mdi:language-php",
+		background: "#2196f3",
+		color: "#000"
 	},
 	{
-		title: "Safety Campaign Excellence",
-		year: "2013",
-		decription: "Acknowledged for leading a successful safety campaign that reached thousands of residents."
+		title: "Perl",
+		icon: "simple-icons:perl",
+		background: "#8271AB",
+		color: "#000"
+	},
+	{
+		title: "C#",
+		icon: "mdi:language-csharp",
+		background: "#640064",
+		color: "#FFF"
+	},
+	{
+		title: "Python",
+		icon: "mdi:language-python",
+		background: "#0402a8",
+		color: "#FF0"
+	},
+	{
+		title: "NodeJS",
+		icon: "mdi:nodejs",
+		background: "#54b87a",
+		color: "#FFF"
+	},
+	{
+		title: "JavaScript",
+		icon: "mdi:language-javascript",
+		background: "#ffff00",
+		color: "#000"
+	},
+	{
+		title: "ASTRO",
+		icon: "simple-icons:astro",
+		background: "#322e2e",
+		color: "#FFF"
+	},
+	{
+		title: "CSS3",
+		icon: "mdi:language-css3",
+		background: "#0402a8",
+		color: "#FFF"
+	},
+	{
+		title: "React",
+		icon: "mdi:react",
+		background: "#000",
+		color: "#87ceeb"
+	},
+	{
+		title: "MySQL",
+		icon: "simple-icons:mysql",
+		background: "#3E6E93",
+		color: "#e97b00"
+	},
+	{
+		title: "SQLite",
+		icon: "simple-icons:sqlite",
+		background: "#FFF",
+		color: "#044a64"
+	},
+	{
+		title: "MongoDB",
+		icon: "simple-icons:mongodb",
+		background: "#FFF",
+		color: "#023430"
+	},
+	{
+		title: "GIT",
+		icon: "mdi:git",
+		background: "#f0efe7",
+		color: "#4e443c"
+	},
+	{
+		title: "SVN",
+		icon: "file-icons:svn",
+		background: "#FFF",
+		color: "#93b0da"
+	},
+	{
+		title: "Linux",
+		icon: "simple-icons:linux",
+		background: "#185886",
+		color: "#bcdef5"
+	},
+	{
+		title: "UNIX",
+		icon: "simple-icons:gnubash",
+		background: "#FFF",
+		color: "#5f8159"
+	},
+	{
+		title: "Docker",
+		icon: "mdi:docker",
+		background: "#FFF",
+		color: "#1d63ed"
+	},
+	{
+		title: "VMWare",
+		icon: "simple-icons:vmware",
+		background: "#565656",
+		color: "#FFF"
 	}
 ]

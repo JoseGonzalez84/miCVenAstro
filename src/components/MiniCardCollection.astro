@@ -1,0 +1,17 @@
+---
+import { Icon } from "astro-icon"
+import MiniCard from "./MiniCard.astro"
+const { collection } = Astro.props
+---
+
+{
+    collection.map((item: any) => {
+      return (
+        <MiniCard
+          icon={item.icon}
+          url={item.source}
+          url_name={item.source_name}
+        />
+      );
+    })
+  }

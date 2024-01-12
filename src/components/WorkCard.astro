@@ -1,0 +1,22 @@
+---
+import { Icon } from "astro-icon";
+const { title, timeframe, description, tags, url, url_name, onlyOneCard } = Astro.props
+var cardBorder = onlyOneCard === "true" ? '' : 'border-b-[1px]'
+var cardClass = "flex w-full p-2 place-items-center border-dashed py-8 border-text/25 "+cardBorder
+---
+<div class={cardClass}>
+    <div class="w-44 self-start justify-self-start">
+        <p class="w-44 text-text/50 text-base">
+            { timeframe }
+        </p>
+        <a href={url} target="_blank" class="w-40 text-base text-text/60 hover:text-text/80">
+            {url_name}
+        </a>
+    </div>
+
+    <div class="self-start justify-self-start text-left">
+        <p class="text-lg text-text/80">{title}</p>
+        <p class="text-sm text-text/70">{description}</p>
+        <sub class="text-xs text-text/60">{tags}</sub>
+    </div>
+</div>
