@@ -5,13 +5,12 @@ const { item } = Astro.props
 let badgeBackground, badgeColor, badgeIcon
 CONTENT.TECH_BADGES.map((mark: any) => {
     if (mark.title == item) {
-    badgeBackground = mark.background
-    badgeColor = mark.color
-    badgeIcon = mark.icon
+        badgeBackground = mark.background
+        badgeColor = mark.color
+        badgeIcon = mark.icon
     }
 })
-const badge_style = "background-color: "+badgeBackground+"; color: "+badgeColor+";"
 ---
-<div class="tech-badge w-20" title={item} data-tooltip-placement="top" style={badge_style}>
-    <Icon name={badgeIcon} class="object-cover w-full h-full rounded-full"/> 
+<div class="tech-badge w-20" title={item} data-tooltip-placement="top" style=`background-color: ${badgeBackground}; color: ${badgeColor};`>
+    <Icon name={badgeIcon} class="object-cover w-full h-full" style="padding: .5em;box-shadow: inset 1px 1px 20px 1px #434343;border-radius: 10px;"/> 
 </div>

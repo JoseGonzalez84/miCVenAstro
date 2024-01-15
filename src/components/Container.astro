@@ -5,6 +5,7 @@ import Card from "./Card.astro"
 import Badge from "./Badge.astro"
 import WorkCard from "./WorkCard.astro"
 import MiniCardCollection from "./MiniCardCollection.astro"
+import MiniBadge from "./MiniBadge.astro"
 ---
 
 <ul class="shadow-box">
@@ -56,6 +57,7 @@ import MiniCardCollection from "./MiniCardCollection.astro"
               url={item.org_url}
               url_name={item.org}
               onlyOneCard="false"
+              badges={item.badges}
             />
           );
         })
@@ -66,7 +68,7 @@ import MiniCardCollection from "./MiniCardCollection.astro"
       {
         CONTENT.education.map((item) => {
           return (
-            <Card
+            <WorkCard
               title={item.course}
               timeframe={`${item.from} - ${item.to}`}
               description={item.location}
@@ -83,7 +85,7 @@ import MiniCardCollection from "./MiniCardCollection.astro"
       {
         CONTENT.certificates.map((item) => {
           return (
-            <Card
+            <WorkCard
               title={item.title}
               timeframe={item.issued}
               description={item.org}
@@ -100,7 +102,7 @@ import MiniCardCollection from "./MiniCardCollection.astro"
       {
         CONTENT.achievements.map((item) => {
           return (
-            <Card
+            <WorkCard
               title={item.title}
               timeframe={item.year}
               description={item.decription}

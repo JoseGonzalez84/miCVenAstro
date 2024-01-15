@@ -1,10 +1,10 @@
 ---
-import { Icon } from "astro-icon";
-const { title, timeframe, description, tags, url, url_name, onlyOneCard } = Astro.props
-var cardBorder = onlyOneCard === "true" ? '' : 'border-b-[1px]'
-var cardClass = "flex w-full p-2 place-items-center border-dashed py-8 border-text/25 "+cardBorder
+import MiniBadge from "./MiniBadge.astro";
+const { title, timeframe, description, tags, url, url_name, onlyOneCard, badges } = Astro.props
+const badgesList = (typeof badges == 'object') ? badges : new Array
+const cardBorder = onlyOneCard === "true" ? '' : 'border-b-[1px]'
 ---
-<div class={cardClass}>
+<div class=`flex w-full p-2 place-items-center border-dashed py-8 border-text/25 ${cardBorder}`>
     <div class="w-44 self-start justify-self-start">
         <p class="w-44 text-text/50 text-base">
             { timeframe }
@@ -18,5 +18,13 @@ var cardClass = "flex w-full p-2 place-items-center border-dashed py-8 border-te
         <p class="text-lg text-text/80">{title}</p>
         <p class="text-sm text-text/70">{description}</p>
         <sub class="text-xs text-text/60">{tags}</sub>
+        <div class="flex flex-wrap">
+            {
+                badgesList.map((badge:any) => {
+                    return (<MiniBadge name={badge}></MiniBadge>)
+                })    
+            }
+            
+        </div>        
     </div>
 </div>

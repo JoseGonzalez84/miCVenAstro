@@ -43,13 +43,20 @@ import Footer from "../components/Footer.astro";
 <style is:global>
 
 	.tech-badge {
-		/*border: 1px solid #fbfbfb;*/
 		border-radius: 0.7em;
-		padding: 0.1em 0.5em;
 		margin-right: 1em;
 		box-shadow: #181818 0px 1px 3px 3px;
 		text-shadow: 0px 0px 5px #00000075;
 	}
+
+	.mini-tech-badge {
+		min-width: 4rem;
+		border-radius: 2em;
+		box-shadow: inset 0 0 5px 1px #181818;
+		text-shadow: 0 0 10px #181818;
+	}
+	
+    
 
 	:root {
 		--color-fuente: #ededed;

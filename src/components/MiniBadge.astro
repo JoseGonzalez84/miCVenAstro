@@ -1,0 +1,15 @@
+---
+import * as CONTENT from "../pages/content"
+const { name } = Astro.props
+var badgeBackground = "#FFF", badgeColor = "#000"
+CONTENT.TECH_BADGES.some((element:any)  => {
+    if (element.title === name) {
+        badgeBackground = element.background
+        badgeColor = element.color
+        return true
+    }
+})
+---
+<div class="mini-tech-badge rounded-lg h-6 text-center text-sm mt-2 mr-4 px-4" style={`background-color: ${badgeBackground}; color: ${badgeColor};`}>
+    {name}
+</div>

@@ -31,7 +31,7 @@ export const TECH_STACK = [
 	},
 	{
 		"title": "Sistemas",
-		"content": ["Linux", "UNIX", "Docker", "VMWare"]
+		"content": ["Linux", "Shell Scripting", "Docker", "VMWare"]
 	},
 	{
 		"title": "Gestión de Versiones",
@@ -60,7 +60,7 @@ export const former_work = [
 		org_url: "https://pandorafms.com/es/",
 		location: "(Remoto) Madrid, España",
 		skills: "Desarrollo de software de monitorización, resolución de bugs y adición de features.",
-		badges: "PHP, Perl, Python, JavaScript, Docker, MySQL"
+		badges: ["PHP", "Perl", "Python", "JavaScript", "Docker", "MySQL"]
 	},{
 		from: "sept. 2018",
 		to: "jun. 2019",
@@ -69,7 +69,7 @@ export const former_work = [
 		org_url: "https://es.nttdata.com/",
 		location: "Alicante, España",
 		skills: "Resolución de bugs y mantenimiento de código legacy en sistemas de información.",
-		badges: "C#, Visual Basic.NET, SVN, SQL Server"
+		badges: ["C#", "Visual Basic.NET", "SVN", "SQL Server"]
 	},{
 		from: "jul. 2017",
 		to: "ago. 2018",
@@ -78,7 +78,7 @@ export const former_work = [
 		org_url: "https://www.linkedin.com/company/atramentum-sl/",
 		location: "Alicante, España",
 		skills: "Desarrollo de portal web comercial de la empresa, ecommerce y TPV.",
-		badges: "PHP, JavaScript, GIT, MySQL"
+		badges: ["PHP", "JavaScript", "GIT", "MySQL"]
 	},{
 		from: "nov. 2015",
 		to: "dic. 2015",
@@ -87,7 +87,7 @@ export const former_work = [
 		org_url: "https://www.i3einformatica.com/",
 		location: "Alicante, España",
 		skills: "Sustitución temporal. Mantenimiento de sistemas informáticos.",
-		badges: "Windows, Remedy Action"
+		badges: ["Windows", "Remedy Action"]
 	},{
 		from: "abr. 2007",
 		to: "jun. 2014",
@@ -96,7 +96,7 @@ export const former_work = [
 		org_url: "https://www.ibi.com/",
 		location: "Tres Cantos, Madrid, España",
 		skills: "Instalación y mantenimiento de servidores de reporting en diversos sistemas.",
-		badges: "WebFOCUS, iWay Software, COBOL, UNIX, Shell Scripting"
+		badges: ["WebFOCUS", "iWay Software", "COBOL", "Shell Scripting"]
 	},
 
 ]
@@ -370,7 +370,7 @@ export const TECH_BADGES = [
 		color: "#bcdef5"
 	},
 	{
-		title: "UNIX",
+		title: "Shell Scripting",
 		icon: "simple-icons:gnubash",
 		background: "#FFF",
 		color: "#5f8159"
@@ -386,5 +386,42 @@ export const TECH_BADGES = [
 		icon: "simple-icons:vmware",
 		background: "#565656",
 		color: "#FFF"
+	},
+	{
+		title: "VisualBasic.NET",
+		icon: "simple-icons:visualbasic",
+		background: "#0402a8",
+		color: "#f5f5dc"
+	},
+	{
+		title: "COBOL",
+		icon: "file-icons:cobol",
+		background: "#000",
+		color: "#FFF"
+	},
+	{
+		title: "API",
+		icon: "mdi:api",
+		background: "#000",
+		color: "#FFF"
+	},
+	{
+		title: "WebSockets",
+		icon: "logos:websocket",
+		background: "#000",
+		color: "#FFF"
+	},
+	{
+		title: "Windows",
+		icon: "simple-icons:windows10",
+		background: "#87ceeb",
+		color: "#FFF"
+	},
+	{
+		title: "WebFOCUS",
+		icon: "mdi:report-box",
+		background: "#0c457d",
+		color: "#FFF"
 	}
+
 ]
