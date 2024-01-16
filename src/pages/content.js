@@ -2,7 +2,11 @@
 export const MY_FIRSTNAME = "José"
 export const MY_SURNAME = "González Silva"
 export const MY_FULLNAME = MY_FIRSTNAME + " " + MY_SURNAME
-export const MY_OCUPATION = "Backend Developer"
+export const MY_CURRENT_COMPANY = "LCRCom (Grupo Aire)"
+export const MY_CURRENT_COMPANY_LINK = "https://www.lcrcom.net/"
+export const MY_CURRENT_OCUPATION = "Backend Developer"
+export const MY_WORKING_SINCE = "1693821600"
+export const MY_WORKING_SINCE_DATE = new Date(MY_WORKING_SINCE)
 export const MY_LOCATION = "Gran Alacant, Alicante, España"
 export const MY_GEOLOCATION = "https://osm.org/go/b76T~FFU--?layers=PN"
 export const MY_BIRTHDATE = "First \"Hello World\" on 451954800"
@@ -39,19 +43,13 @@ export const TECH_STACK = [
 	}
 ]
 // Work Experience --> #work section
-export const work = [
-	{
-		from: "sept. 2023",
-		role: MY_OCUPATION,
-		org: "LCRCom - Grupo Aire",
-		org_url: "https://www.lcrcom.net/",
-		location: "(Remoto) Madrid, España",
-		skills: "Desarrollo de features para API, PBX y software de comunicaciones. https://www.linkedin.com/posts/grupo-aire_centralitavirtual-recursoshumanos-rrhh-activity-7107641756657102848-UftF?utm_source=share&utm_medium=member_desktop",
-		badges: "PHP, API, WebSockets, MySQL"
-	},
+export const CURRENT_WORK = [
+		`Llevo trabajando como ${MY_CURRENT_OCUPATION} en ${MY_CURRENT_COMPANY} desde Septiembre de 2023.`,
+		"Mi principal cometido es la definición y creación de features para los sistemas de comunicaciones avanzados en la nube desarrollados por LCRCom. Actualmente estoy inmerso en diferentes proyectos de innovación y mejora de producto, añadiendo nuevas funcionalidades al software MeetIp Pro.",
+		`Desarrollo mi trabajo fundamentalmente con PHP y SQL. Para el apartado API, utilizo principalmente Postman, y por experimentación, se ha trabajado con algo de NodeJS.`
 ]
 // Former work.
-export const former_work = [
+export const FORMER_WORK = [
 	{
 		from: "jun. 2019",
 		to: "mar. 2023",
@@ -178,10 +176,15 @@ export const contact = [
 		icon: "mdi:spotify",
 	},
 	{
-		source_name: "Telegram",
-		source: "https://open.spotify.com/user/11143436407?si=ee9c73538c4a4638",
-		icon: "ic:baseline-telegram",
+		source_name: "GitHub",
+		source: "https://github.com/JoseGonzalez84",
+		icon: "mdi:github"
 	},
+	{
+		source_name: "Curriculum Vitae en PDF",
+		source: "https://drive.google.com/file/d/1TtzXz_T4YNXxMfsk0CWfQjaF9uyPWTNp/view?usp=sharing",
+		icon: "ic:round-sim-card-download"
+	}
 ]
 
 // Certifications --> #certificate section
@@ -246,7 +249,7 @@ export const certificates = [
 		issued: "jul. 2019",
 		title: "Pandora Engineering Course",
 		org: "Artica PFMS",
-		url: "https://openwebinars.net/cert/kkNZp",
+		url: "",
 		description: "Conocimientos avanzados de instalación y configuración de PandoraFMS 736",
 	},
 	{
@@ -422,6 +425,12 @@ export const TECH_BADGES = [
 		icon: "mdi:report-box",
 		background: "#0c457d",
 		color: "#FFF"
+	},
+	{
+		title: "Postman",
+		icon: "mdi:report-box",
+		background: "#ffa500",
+		color: "#000"
 	}
 
 ]

@@ -29,25 +29,15 @@ import MiniBadge from "./MiniBadge.astro"
     }
   </AccordionLayout>
     <AccordionLayout title={"Mi trabajo actual"} icon={"mdi:briefcase-check"}>
-        {CONTENT.work.map((item) => {
-          return (
-            <WorkCard
-              title={item.role}
-              timeframe={item.from}
-              description={item.location}
-              tags={item.skills}
-              url={item.org_url}
-              url_name={item.org}
-              onlyOneCard="true"
-            />
-          );
+      {CONTENT.CURRENT_WORK.map((item: any) => {
+          return <p>{item}</p><br/>
         })
       }
     </AccordionLayout>
 
     <AccordionLayout title={"Experiencia Laboral"} icon={"mdi:briefcase-clock"}>
       {
-        CONTENT.former_work.map((item) => {
+        CONTENT.FORMER_WORK.map((item) => {
           return (
             <WorkCard
               title={item.role}
