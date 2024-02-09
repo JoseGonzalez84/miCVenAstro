@@ -9,7 +9,7 @@ import Footer from "../components/Footer.astro";
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="codeLogo.svg" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;500;700&display=swap" rel="stylesheet">
@@ -20,18 +20,21 @@ import Footer from "../components/Footer.astro";
 		<meta name="generator" content={Astro.generator} />
 		<title>CV | {CONTENT.MY_FULLNAME}</title>
 	</head>
-	<body class="bg-background text-text flex flex-col min-h-screen">
-
+	<body class="bg-slate-900 text-text flex flex-col min-h-screen">
+		<!--
+					background-image: url( "data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 8l-4 4l4 4" /><path d="M17 8l4 4l-4 4" /><path d="M14 4l-4 16" /%3E%3C/svg%3E
+		-->
 		<Header />
 
 		<!-- Bar Effect -->
+		<!--
 		<article class="mx-auto h-fit max-w-3xl w-[95vw] flex flex-nowrap bg-slate-400">
 			<div class="bg-red-900 w-full h-1.5" id="one"></div>
 			<div class="bg-yellow-500 hover:scale-x-[2] w-full h-1.5" id="two"></div>
 			<div class="bg-red-900 w-full h-1.5" id="three"></div>
 		</article>
-
-		<main class="mx-auto flex-grow max-h-[90vh] md:max-h-[70vh] max-w-3xl overflow-y-scroll grid gap-5 p-5 w-[95vw]">
+		-->
+		<main class="mx-auto flex-grow max-h-[90vh] md:max-h-[70vh] max-w-4xl overflow-y-scroll grid gap-5 p-5 w-[95vw]">
 			<Container />
 		</main>
 
@@ -56,11 +59,14 @@ import Footer from "../components/Footer.astro";
 		text-shadow: 0 0 10px #181818;
 	}
 	
-    
-
 	:root {
 		--color-fuente: #ededed;
 		--color-fondo: #111;
+		--color-palleteTooDark: #052644;
+		--color-palleteDark: #0e406c;
+		--color-palleteMedium: #3770a4;
+		--color-palleteBright: #6092bf;
+		--color-palleteTooBright: #b8d1e8;
 	}
 
 	[tema="light"]{
@@ -74,14 +80,22 @@ import Footer from "../components/Footer.astro";
 	}
 
 	body {
+		background-image: url("codeLogo.svg");
+		position: relative;
+  		overflow: hidden;
 		/*
 		background-color:var(--color-fondo) !important;
   		color:var(--color-fuente) !important;
 		*/
 	}
 
+
 	h1, h2, h4, p, a, sub {
 		/* color:var(--color-fuente) !important; */
+	}
+
+	p {
+		color: var(--color-palleteBright);
 	}
 
 	@media only screen and (max-width: 480px){
@@ -174,15 +188,3 @@ import Footer from "../components/Footer.astro";
     }
 
 </style>
-
-<script>
-	const colorSwitch = document.querySelector('#switchModo input[type="checkbox"]');
-	function cambiaTema(ev: any){
-		if(ev.target.checked){
-			document.documentElement.setAttribute('tema', 'light');
-		} else {
-			document.documentElement.setAttribute('tema', 'dark');
-		}
-	}
-	colorSwitch.addEventListener('change', cambiaTema);
-</script>

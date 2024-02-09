@@ -4,12 +4,12 @@ const { title, timeframe, description, tags, url, url_name, onlyOneCard, badges 
 const badgesList = (typeof badges == 'object') ? badges : new Array
 const cardBorder = onlyOneCard === "true" ? '' : 'border-b-[1px]'
 ---
-<div class=`flex w-full p-2 place-items-center border-dashed py-8 border-text/25 ${cardBorder}`>
+<div class=`flex w-full p-2 place-items-center border-dashed border-text/25 ${cardBorder}`>
     <div class="w-44 self-start justify-self-start">
         <p class="w-44 text-text/50 text-base">
             { timeframe }
         </p>
-        <a href={url} target="_blank" class="w-40 text-base text-text/60 hover:text-text/80">
+        <a href={url} target="_blank" class="w-40 text-base text-text/60 hover:text-palleteTooBright">
             {url_name}
         </a>
     </div>

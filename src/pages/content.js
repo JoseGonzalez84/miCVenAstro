@@ -11,13 +11,14 @@ export const MY_LOCATION = "Gran Alacant, Alicante, España"
 export const MY_GEOLOCATION = "https://osm.org/go/b76T~FFU--?layers=PN"
 export const MY_BIRTHDATE = "First \"Hello World\" on 451954800"
 export const MY_WEBSITE = "https://gadev.com.es/"
+export const WEB_VERSION = "1.1"
 
 // About
 export const ABOUT_ME = [
 	"Di mi primer \"Hola Mundo\" en 451954800, poco despues que lo hiciera el Apple Macintosh.",
 	"Mis primeros pinitos en la informática los dí en el año olímpico de 1992, de la mano del IBM Clónico con procesador 80286, 2Mb de RAM, 20Mb de disco duro y monitor CRT a color (todo un portento de la tecnología de la época) que trajo mi padre a casa. Desde entonces, me considero un informático entusiasta con ganas de aprender de todo (con 10 años me llegué a leer el manual de dBase IV).",
 	"Me considero un tipo curioso, en todos los aspectos; me gusta aprender cosas nuevas y practicar lo que ya se. No puedo decir que no me haya rendido alguna vez pero es un recurso que detesto, así que trato de terminar mis cosas aunque el universo no me deje siempre.",
-	"Me vuelven loco los videojuegos, la fotografía y el explorar el campo, ya sea haciendo senderismo o con la bicicleta de montaña. Y tengo una secreta afición a cocinar.",
+	"Me vuelve loco mi familia (literal y metafóricamente), los videojuegos (esto solo metafóricamente), la fotografía y el explorar el campo, ya sea haciendo senderismo o con la bicicleta de montaña. Y tengo una secreta afición a cocinar. Creo que no se me da mal.",
 ]
 // Tech Stack
 export const TECH_STACK = [
@@ -156,39 +157,46 @@ export const education = [
 // Contact --> #contact section
 export const contact = [
 	{
-		source_name: "Email",
+		source_name: "Envíame un correo electrónico",
 		source: "mailto:josegonzalez84@outlook.es",
 		icon: "mdi:email",
 	},
 	{
-		source_name: "X, antes conocido por Twitter",
-		source: "https://twitter.com/jsx_freakk",
-		icon: "mdi:twitter",
-	},
-	{
-		source_name: "LinkedIn",
+		source_name: "Perfil en Linked In",
 		source: "https://www.linkedin.com/in/jose-gonzalez-silva/",
 		icon: "mdi:linkedin",
 	},
 	{
-		source_name: "Spotify",
+		source_name: "Mi perfil en Spotify",
 		source: "https://open.spotify.com/user/11143436407?si=ee9c73538c4a4638",
 		icon: "mdi:spotify",
 	},
 	{
-		source_name: "GitHub",
+		source_name: "Mis repositorios de GitHub",
 		source: "https://github.com/JoseGonzalez84",
 		icon: "mdi:github"
 	},
 	{
+		source_name: "Mi perfil de Chess.com",
+		source: "https://www.chess.com/member/gadevchess",
+		icon: "mdi:chess-knight"
+	},
+	{
 		source_name: "Curriculum Vitae en PDF",
-		source: "https://drive.google.com/file/d/1TtzXz_T4YNXxMfsk0CWfQjaF9uyPWTNp/view?usp=sharing",
+		source: "/CV_JoseGonzalezSilva_2024.pdf",
 		icon: "ic:round-sim-card-download"
 	}
 ]
 
 // Certifications --> #certificate section
 export const certificates = [
+	{
+		issued: "ene. 2024",
+		title: "Desarrollo de aplicaciones Web con NodeJS y Express",
+		org: "OpenWebinars",
+		url: "https://openwebinars.net/cert/cSKo",
+		description: "Core de NodeJS, ExpressJS, Shockets y despliegues.",
+	},
 	{
 		issued: "oct. 2023",
 		title: "Curso de JavaScript Avanzado",

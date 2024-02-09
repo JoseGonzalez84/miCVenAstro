@@ -2,7 +2,7 @@
 import { Icon } from "astro-icon";
 const { url, icon, url_name } = Astro.props
 ---
-    <div class="rounded-full border-primary self-end shadow-2xl md:w-24 w-20 aspect-square">
+    <div title={url_name} class="rounded-full border-primary self-end shadow-2xl md:w-24 w-20 aspect-square">
         <a href={url}>
             <Icon name={icon} class="object-cover w-full h-full rounded-full grayscale-[50] hover:grayscale-0"/>
         </a>

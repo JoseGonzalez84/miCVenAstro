@@ -15,19 +15,6 @@ import MiniBadge from "./MiniBadge.astro"
       })
     }
   </AccordionLayout>
-  <AccordionLayout title={"Stack Tecnológico"} icon={"mdi:cog-clockwise"}>
-    {CONTENT.TECH_STACK.map((item) => {
-      return <div class="p-2">
-        <h2 class="p-1 text-text/80 text-2xl">{item.title}</h2>
-        <div class="flex">
-          {item.content.map((subitem: string) => {
-            return <Badge item={subitem}></Badge>
-          })}
-        </div>
-      </div>
-    })
-    }
-  </AccordionLayout>
     <AccordionLayout title={"Mi trabajo actual"} icon={"mdi:briefcase-check"}>
       {CONTENT.CURRENT_WORK.map((item: any) => {
           return <p>{item}</p><br/>
@@ -68,6 +55,20 @@ import MiniBadge from "./MiniBadge.astro"
             />
           );
         })
+      }
+    </AccordionLayout>
+
+    <AccordionLayout title={"Stack Tecnológico"} icon={"mdi:cog-clockwise"}>
+      {CONTENT.TECH_STACK.map((item) => {
+        return <div class="p-2">
+          <h2 class="p-1 text-text/80 text-2xl">{item.title}</h2>
+          <div class="flex">
+            {item.content.map((subitem: string) => {
+              return <Badge item={subitem}></Badge>
+            })}
+          </div>
+        </div>
+      })
       }
     </AccordionLayout>
 

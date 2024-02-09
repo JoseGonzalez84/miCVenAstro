@@ -9,6 +9,11 @@ module.exports = {
 				'primary': 'hsl(216, 82%, 27%)',
 				'secondary': 'hsl(246, 82%, 13%)',
 				'accent': 'hsl(246, 82%, 53%)',
+				'palleteTooDark': '#052644',
+				'palleteDark': '#0e406c',
+				'palleteMedium': '#3770a4',
+				'palleteBright': '#6092bf',
+				'palleteTooBright': '#b8d1e8',
 			}
 		},
 	},

@@ -33,7 +33,7 @@ const { title, icon } = Astro.props;
     x-ref="container1"
     x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
   >
-    <div class="py-4 px-2 text-text/60">
+    <div class="px-2 text-text/60">
       <slot />
     </div>
   </div>

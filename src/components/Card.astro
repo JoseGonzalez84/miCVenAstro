@@ -2,7 +2,7 @@
 import { Icon } from "astro-icon";
 const { timeframe, title, description, url, tags, url_name, onlyOneCard } = Astro.props
 var cardBorder = onlyOneCard === "true" ? '' : 'border-b-[1px]'
-var cardClass = "grid grid-cols-3 grid-rows-1 w-full p-2 place-items-center border-dashed py-8 border-text/25 "+cardBorder
+var cardClass = "grid grid-cols-3 grid-rows-1 w-full p-2 place-items-center border-dashed py-4 border-text/25 "+cardBorder
 ---
 
 <div class={cardClass}>
@@ -19,7 +19,7 @@ var cardClass = "grid grid-cols-3 grid-rows-1 w-full p-2 place-items-center bord
     </div>
 
     <div class="self-start justify-self-end">
-        <a href={url} target="_blank" class="text-base text-right text-text/60 hover:text-text/80 flex justify-center items-center">
+        <a href={url} target="_blank" class="text-base text-right text-text/60 hover:text-palleteTooBright flex justify-center items-center">
             {url_name}
             {
                url !== "#" && <Icon name="ic:baseline-link" class="w-4 h-4 ml-2" />
